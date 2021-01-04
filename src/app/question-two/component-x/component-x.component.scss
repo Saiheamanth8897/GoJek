@@ -6,9 +6,20 @@
 }
 .height_of_card {
   height:250px;
+  border-radius: 5%;
 }
 .child_card_items {
   overflow: auto;
-    height: 196px;
+    height: 145px;
     padding: 10px;
+}
+.heading {
+  background: #3c90d9;
+  padding: 10px;
+  color:white
+}
+.border {
+
+  border-radius: 44px;
+
 }
