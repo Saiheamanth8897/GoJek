@@ -1,0 +1,37 @@
+
+
+<header class="p-2">
+  <div class="row">
+    <div class="col-md-4 text-left bg-dark ">
+      <div class="text-center text-light"><h2>card A</h2></div>
+      <app-item-a [textData] ="enteredData"></app-item-a>
+    </div>
+    <div class="col-md-4 text-left">
+
+    </div>
+    <div class="col-md-4 text-right bg-dark">
+      <div class="text-center text-light"><h2>card B</h2></div>
+      <app-item-b [textData] ="enteredData"></app-item-b>
+    </div>
+  </div>
+</header>
+<div class="p-5 text-center">
+  <app-item-e (postMessageEvent)="postMessage($event)"></app-item-e>
+</div>
+<footer class="p-2">
+
+  <div class="row">
+    <div class="col-md-4 text-left bg-dark">
+      <div class="text-center text-light"><h2>card C</h2></div>
+      <app-item-c [textData] ="enteredData"></app-item-c>
+    </div>
+    <div class="col-md-4 text-left">
+
+    </div>
+    <div class="col-md-4 text-right bg-dark">
+      <div class="text-center text-light"><h2>card D</h2></div>
+      <app-item-d [textData] ="enteredData"></app-item-d>
+    </div>
+
+  </div>
+</footer>

@@ -1,0 +1,9 @@
+<div>
+ <div class="mt-2" *ngFor="let item of item_data.items; let i = index">
+  <input type="text" id="{{i}}" placeholder="Enter a text" value = ""/>
+  &nbsp;
+  <button class="btn btn-primary" (click)="save_data(item, i)">save</button>
+
+ </div>
+
+</div>

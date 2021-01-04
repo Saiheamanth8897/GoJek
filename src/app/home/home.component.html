@@ -1,0 +1,18 @@
+<h4 class="text-center">Go-Jek Tech Questions</h4>
+<div class="row p-5" >
+  <div class="col-md-6 border " *ngFor="let task_questions of task_questions; let i = index">
+  <div><b>{{task_questions.question}}</b></div>
+  <div *ngFor="let Problem of task_questions.Problem">
+    <label>{{Problem}}</label>
+  </div>
+
+  <div><button class="btn btn-primary" (click)="question(task_questions.question_no)">Answer</button> </div>
+  <div *ngFor="let descroption of task_questions.description">
+    <div class="">{{descroption}}</div>
+  </div>
+</div>
+
+
+</div>
+
+

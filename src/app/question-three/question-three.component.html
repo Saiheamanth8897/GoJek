@@ -1,0 +1,11 @@
+<div class="row mt-3">
+  <div class="col-md-6 offset-md-3 text-right">
+    <button class="btn btn-primary"(click)="onSubmit()">Submit</button>
+    &nbsp;
+    <button class="btn btn-primary" (click)="add_number()">Add Phone Number</button>
+    <div *ngFor="let numbers of mobileNumbers">
+      <input type="number" class="w-100 mt-3" placeholder="please enter Mobile Number" [disabled]="numbers.mobile_number.length == 10"  [(ngModel)]="numbers.mobile_number"/>
+    </div>
+
+  </div>
+</div>
